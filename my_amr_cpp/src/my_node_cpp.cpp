@@ -84,7 +84,7 @@ void StatePublisher::publish() {
     // 3. POPULATE ODOMETRY TRANSFORM
     t.header.stamp = ts;
     t.header.frame_id = "odom";       
-    t.child_frame_id = "base_link";   
+    t.child_frame_id = "base_footprint";   
 
     t.transform.translation.x = robot_x;
     t.transform.translation.y = robot_y;
