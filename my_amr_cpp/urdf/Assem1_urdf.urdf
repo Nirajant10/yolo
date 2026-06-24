@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="Assem1_urdf">
+  
+  <link name="base_footprint">
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <box size="0.001 0.001 0.001" />
+      </geometry>
+    </visual>
+  </link>
+
+  <joint name="base_footprint_joint" type="fixed">
+    <origin xyz="0.0 -0.075 0.0" rpy="0 0 0" />
+    <parent link="base_footprint" />
+    <child link="base_link" />
+  </joint>
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="-0.125 0.0303575371086402 -0.075"
+        rpy="0 0 0" />
+      <mass
+        value="2.28455751918949" />
+      <inertia
+        ixx="0.00501789775265762"
+        ixy="4.47264437458017E-20"
+        ixz="-2.46499822540802E-19"
+        iyy="0.0160799515918862"
+        iyz="-4.04979321494301E-20"
+        izz="0.0125012276766395" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://my_amr_cpp/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://my_amr_cpp/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  
+  <link
+    name="Wheel_link1">
+    <inertial>
+      <origin
+        xyz="5.5511E-17 0.00050996 0.01"
+        rpy="0 0 0" />
+      <mass
+        value="0.09896" />
+      <inertia
+        ixx="4.3501E-05"
+        ixy="-2.7784E-24"
+        ixz="4.0192E-37"
+        iyy="4.3501E-05"
+        iyz="1.1197E-25"
+        izz="8.0405E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://my_amr_cpp/meshes/Wheel_link1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0 0 0 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://my_amr_cpp/meshes/Wheel_link1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Wheel_joint1"
+    type="continuous">
+    <origin
+      xyz="-0.205 -0.01 0.01"
+      rpy="1.5708 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="Wheel_link1" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="Wheel_link2">
+    <inertial>
+      <origin
+        xyz="7.6328E-17 0.00050996 0.01"
+        rpy="0 0 0" />
+      <mass
+        value="0.09896" />
+      <inertia
+        ixx="4.3501E-05"
+        ixy="-2.7784E-24"
+        ixz="4.0527E-37"
+        iyy="4.3501E-05"
+        iyz="1.3918E-25"
+        izz="8.0405E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://my_amr_cpp/meshes/Wheel_link2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0 0 0 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://my_amr_cpp/meshes/Wheel_link2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Wheel_joint2"
+    type="continuous">
+    <origin
+      xyz="-0.045 -0.01 0.01"
+      rpy="1.5708 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="Wheel_link2" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="Wheel_link3">
+    <inertial>
+      <origin
+        xyz="1.8041E-16 0.00050996 -0.01"
+        rpy="0 0 0" />
+      <mass
+        value="0.09896" />
+      <inertia
+        ixx="4.3501E-05"
+        ixy="1.6941E-21"
+        ixz="-2.4564E-23"
+        iyy="4.3501E-05"
+        iyz="6.956E-23"
+        izz="8.0405E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://my_amr_cpp/meshes/Wheel_link3.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0 0 0 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://my_amr_cpp/meshes/Wheel_link3.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Wheel_joint3"
+    type="continuous">
+    <origin
+      xyz="-0.045 0.16 0.01"
+      rpy="1.5708 0.098871 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="Wheel_link3" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="Wheel_link4">
+    <inertial>
+      <origin
+        xyz="5.5511E-17 0.00050996 -0.01"
+        rpy="0 0 0" />
+      <mass
+        value="0.09896" />
+      <inertia
+        ixx="4.3501E-05"
+        ixy="-2.7784E-24"
+        ixz="5.7351E-22"
+        iyy="4.3501E-05"
+        iyz="1.2861E-24"
+        izz="8.0405E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://my_amr_cpp/meshes/Wheel_link4.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0 0 0 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://my_amr_cpp/meshes/Wheel_link4.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Wheel_joint4"
+    type="continuous">
+    <origin
+      xyz="-0.205 0.16 0.01"
+      rpy="1.5708 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="Wheel_link4" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="Lidar_link">
+    <inertial>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <mass
+        value="0.09896" />
+      <inertia
+        ixx="4.3501E-05"
+        ixy="1.6941E-21"
+        ixz="-2.4564E-23"
+        iyy="4.3501E-05"
+        iyz="6.956E-23"
+        izz="8.0405E-05"  />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://my_amr_cpp/meshes/Lidar_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://my_amr_cpp/meshes/Lidar_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Lidar_joint"
+    type="continuous">
+    <origin
+      xyz="-0.125 0.075 0.06"
+      rpy="1.5708 0 -0.12751" />
+    <parent
+      link="base_link" />
+    <child
+      link="Lidar_link" />
+    <axis
+      xyz="0 1 0" />
+  </joint>
+</robot>

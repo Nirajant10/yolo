@@ -1,0 +1,25 @@
+# --- Python Artifacts ---
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+.coverage
+htmlcov/
+
+# --- C++ / Build Artifacts ---
+*.o
+*.a
+*.so
+*.out
+
+# --- IDEs and Editors ---
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# --- OS Generated Files ---
+.DS_Store
+Thumbs.db
